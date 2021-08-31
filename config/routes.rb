@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
+      get 'opengeo/index'
+    end
+  end
+  namespace :api do
+    namespace :v1 do
       get 'openweather/index'
     end
   end
